@@ -1,0 +1,19 @@
+'Webandco.NodeTypes:Property.Subline':
+  properties:
+    subline:
+      type: string
+      defaultValue: 'Enter teaser subline here'
+      search:
+        fulltextExtractor: ${Indexing.extractInto('h3', value)}
+      ui:
+        inlineEditable: TRUE
+        aloha:
+          'autoparagraph': false
+          'format': []
+          'table': []
+          'link': []
+          'list': []
+          'alignment': []
+          'formatlesspaste':
+            'button': false
+            'formatlessPasteOption': true

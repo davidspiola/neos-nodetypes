@@ -1,0 +1,20 @@
+prototype(Webandco.NodeTypes:Property.Headline) < prototype(PackageFactory.AtomicFusion:Component) {
+
+    renderer = Webandco.NodeTypes:Property.Headline.Renderer {
+        headline = ${props.headline}
+    }
+}
+
+prototype(Webandco.NodeTypes:Property.Headline.Renderer) < prototype(PackageFactory.AtomicFusion:Component) {
+
+    postfix = ''
+    tagName = 'h1'
+
+    renderer =  Neos.Fusion:Tag {
+        tagName = ${props.tagName}
+        attributes.class = PackageFactory.AtomicFusion:ClassNames
+        content = ${props.headline}
+        @process.makeEditable = Neos.Neos:ContentElementEditable
+        @process.makeEditable.property = ${'headline' + props.postfix}
+    }
+}

@@ -1,0 +1,13 @@
+Neos:
+  Neos:
+    fusion:
+      autoInclude:
+        'Webandco.NodeTypes': TRUE
+    nodeTypes:
+      groups:
+        component:
+          position: 100
+          label: 'Component'
+        property:
+          position: 200
+          label: 'Property'

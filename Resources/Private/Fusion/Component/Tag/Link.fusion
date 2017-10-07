@@ -1,0 +1,37 @@
+prototype(Webandco.NodeTypes:Component.Tag.Link) < prototype(PackageFactory.AtomicFusion:Component) {
+
+    linkHref.@if.node = ${node != null}
+    linkHref.@if.inBackend = ${!node.context.inBackend}
+    linkHref.@process.convertUris = Neos.Neos:ConvertUris {
+        forceConversion = true
+    }
+
+    renderer = Webandco.NodeTypes:Component.Tag.Link.Renderer {
+        href = ${props.linkHref}
+        text = ${props.linkText}
+
+        @process.makeEditable = Neos.Neos:ContentElementEditable
+        @process.makeEditable.property = 'linkText'
+    }
+}
+
+prototype(Webandco.NodeTypes:Component.Tag.Link.Renderer) < prototype(PackageFactory.AtomicFusion:Component) {
+
+    tagName = 'a'
+
+    @styleguide {
+        props {
+            href = '#'
+            text = 'A link'
+        }
+    }
+
+    renderer = Neos.Fusion:Tag {
+        tagName = ${props.tagName}
+        attributes.class = PackageFactory.AtomicFusion:ClassNames
+        attributes.href = ${props.href}
+
+        content = ${props.text}
+    }
+}
+

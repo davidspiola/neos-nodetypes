@@ -1,0 +1,9 @@
+'Webandco.NodeTypes:Optional':
+  abstract: true
+  ui:
+    inspector:
+      groups:
+        optional:
+          label: i18n
+          position: 4
+          icon: 'icon-gear'

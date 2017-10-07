@@ -1,0 +1,47 @@
+'Webandco.NodeTypes:Property.Image':
+  ui:
+    inspector:
+      groups:
+        image:
+          label: Image
+          position: 4
+          icon: 'icon-picture'
+  properties:
+    imageSrc:
+      type: Neos\Media\Domain\Model\ImageInterface
+      ui:
+        label: 'Image'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'image'
+          position: 50
+          editorOptions:
+            features:
+              crop: TRUE
+            crop:
+              aspectRatio:
+                options:
+                  square: ~
+                  fourFive: ~
+                  fiveSeven: ~
+                  twoThree: ~
+                  fourThree: ~
+                  sixteenNine: ~
+                enableOriginal: false
+                allowCustom: true
+    imageAlt:
+      type: string
+      ui:
+        label: Image alt text
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'image'
+          position: 100
+    imageTitle:
+      type: string
+      ui:
+        label: Image title
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'image'
+          position: 150

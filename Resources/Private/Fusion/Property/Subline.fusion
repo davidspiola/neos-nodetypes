@@ -1,0 +1,13 @@
+prototype(Webandco.NodeTypes:Property.Subline) < prototype(PackageFactory.AtomicFusion:Component) {
+
+    postfix = ''
+    tagName = 'h2'
+
+    renderer = Neos.Fusion:Tag {
+        tagName = ${props.tagName}
+        attributes.class = PackageFactory.AtomicFusion:ClassNames
+        content = ${props.subline}
+        @process.makeEditable = Neos.Neos:ContentElementEditable
+        @process.makeEditable.property = ${'subline' + props.postfix}
+    }
+}

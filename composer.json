@@ -1,0 +1,33 @@
+{
+    "name": "webandco/neos-nodetypes",
+    "type": "neos-package",
+    "description": "web&co neos nodetypes package",
+    "keywords": ["flow", "neos", "nodetypes"],
+    "homepage": "http://webandco.com",
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Markus Pfeifenberger",
+            "email": "markus@webandco.com",
+            "homepage": "http://webandco.com",
+            "role": "Developer"
+        },
+        {
+            "name": "David Spiola",
+            "email": "david@webandco.com",
+            "homepage": "http://webandco.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "support@webandco.com"
+    },
+    "require": {
+        "neos/neos": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webandco\\NodeTypes\\": "Classes"
+        }
+    }
+}

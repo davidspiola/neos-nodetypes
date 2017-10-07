@@ -1,0 +1,19 @@
+'Webandco.NodeTypes:Property.Headline':
+  properties:
+    headline:
+      type: string
+      defaultValue: 'Enter teaser headline here'
+      search:
+        fulltextExtractor: ${Indexing.extractInto('h2', value)}
+      ui:
+        inlineEditable: TRUE
+        aloha:
+          'autoparagraph': false
+          'format': []
+          'table': []
+          'link': []
+          'list': []
+          'alignment': []
+          'formatlesspaste':
+            'button': false
+            'formatlessPasteOption': true

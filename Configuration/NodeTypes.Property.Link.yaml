@@ -1,0 +1,32 @@
+'Webandco.NodeTypes:Property.Link':
+  ui:
+    inspector:
+      groups:
+        link:
+          label: Link
+          position: 4
+          icon: 'icon-link'
+  properties:
+    linkText:
+      type: string
+      defaultValue: 'link text'
+      ui:
+        inlineEditable: TRUE
+        aloha:
+          'autoparagraph': false
+          'format': []
+          'table': []
+          'link': []
+          'list': []
+          'alignment': []
+          'formatlesspaste':
+            'button': false
+            'formatlessPasteOption': true
+    linkHref:
+      type: string
+      ui:
+        label: Link
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'link'
+          editor: 'Neos.Neos/Inspector/Editors/LinkEditor'

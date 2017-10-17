@@ -1,0 +1,36 @@
+'Webandco.NodeTypes:Component.Tag.Article':
+  abstract: true
+  superTypes:
+    'Webandco.NodeTypes:Property.Image': true
+  properties:
+    author:
+      type: string
+      ui:
+        label: Author
+        inspector:
+          group: 'article'
+    headline:
+      type: string
+      defaultValue: 'Enter headline text here'
+      ui:
+        inlineEditable: TRUE
+        aloha:
+          'autoparagraph': false
+          'format': []
+          'table': []
+          'link': []
+          'list': []
+          'alignment': []
+          'formatlesspaste':
+            'button': false
+            'formatlessPasteOption': true
+    datePublished:
+      type: DateTime
+      ui:
+        label: 'Publication Date'
+        reloadIfChanged: true
+        inspector:
+          group: 'article'
+      validation:
+        'Neos.Neos/Validation/NotEmptyValidator': []
+        'Neos.Neos/Validation/DateTimeValidator': []

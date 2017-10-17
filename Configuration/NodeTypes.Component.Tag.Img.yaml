@@ -1,0 +1,5 @@
+'Webandco.NodeTypes:Component.Tag.Img':
+  abstract: TRUE
+  superTypes:
+    'Webandco.NodeTypes:Property.Image': true
+

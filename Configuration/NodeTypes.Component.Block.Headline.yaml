@@ -1,0 +1,10 @@
+'Webandco.NodeTypes:Component.Block.Headline':
+  abstract: false
+  superTypes:
+    'Neos.Neos:Content': true
+    'Webandco.NodeTypes:Property.Headline': true
+  ui:
+    label: 'Headline'
+    icon: 'icon-gear'
+    position: 100
+    group: 'content'

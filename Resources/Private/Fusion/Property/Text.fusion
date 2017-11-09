@@ -1,27 +1,25 @@
-prototype(Webandco.NodeTypes:Property.Headline.Renderer) < prototype(PackageFactory.AtomicFusion:Component) {
+prototype(Webandco.NodeTypes:Property.Text.Renderer) < prototype(PackageFactory.AtomicFusion:Component) {
 
     text = 'must-be-set'
-    tagName = 'h1'
-    class = ''
+    class = 'text'
     postfix = ''
     modifier = ''
 
     @styleguide {
         props {
-            text = 'Headline'
-            class = ''
+            text = 'Some text...'
+            class = 'text'
             modifier = ''
             postfix = ''
         }
     }
 
     renderer = Neos.Fusion:Tag {
-        tagName = ${props.tagName}
         attributes.class = PackageFactory.AtomicFusion:ClassNames
         attributes.class.@process.class = ${String.trim(value + ' ' + props.class)}
         attributes.class.@process.modifier = ${props.modifier != '' ? String.trim(value + ' ' + props.class + '--' + props.modifier) : value}
-        content = ${props.headline}
+        content = ${props.text}
         @process.makeEditable = Neos.Neos:ContentElementEditable
-        @process.makeEditable.property = ${'headline' + props.postfix}
+        @process.makeEditable.property = ${'text' + props.postfix}
     }
 }

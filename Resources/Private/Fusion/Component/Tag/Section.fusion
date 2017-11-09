@@ -1,0 +1,19 @@
+prototype(Webandco.NodeTypes:Component.Tag.Section) < prototype(PackageFactory.AtomicFusion:Content) {
+    renderer = Webandco.NodeTypes:Component.Tag.Section.Renderer
+}
+
+prototype(Webandco.NodeTypes:Component.Tag.Section.Renderer) < prototype(PackageFactory.AtomicFusion:Component) {
+
+    @styleguide {
+    }
+
+    renderer = Neos.Fusion:Tag {
+        tagName = 'section'
+        attributes.class = PackageFactory.AtomicFusion:ClassNames {
+            section-content = true
+        }
+
+        content = Webandco.NodeTypes:Component.Module.ContentCollection
+    }
+}
+

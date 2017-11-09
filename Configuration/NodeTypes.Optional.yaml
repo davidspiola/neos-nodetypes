@@ -4,6 +4,6 @@
     inspector:
       groups:
         optional:
-          label: i18n
+          label: Optional
           position: 4
           icon: 'icon-gear'

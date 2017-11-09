@@ -1,0 +1,6 @@
+'Webandco.NodeTypes:Component.Module.ContentCollection':
+  abstract: true
+  superTypes:
+    'Neos.Neos:ContentCollection': true
+  ui:
+    inlineEditable: TRUE

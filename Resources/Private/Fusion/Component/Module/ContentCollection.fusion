@@ -1,0 +1,5 @@
+prototype(Webandco.NodeTypes:Component.Module.ContentCollection) < prototype(PackageFactory.AtomicFusion:Content) {
+    renderer = Webandco.NodeTypes:Component.Module.ContentCollection.Renderer
+}
+
+prototype(Webandco.NodeTypes:Component.Module.ContentCollection.Renderer) < prototype(Neos.Neos:ContentCollectionRenderer)

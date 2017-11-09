@@ -5,9 +5,12 @@ Neos:
         'Webandco.NodeTypes': TRUE
     nodeTypes:
       groups:
-        component:
+        content:
           position: 100
+          label: 'Content'
+        component:
+          position: 200
           label: 'Component'
         property:
-          position: 200
+          position: 300
           label: 'Property'

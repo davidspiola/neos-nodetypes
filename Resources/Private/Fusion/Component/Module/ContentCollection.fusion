@@ -2,4 +2,6 @@ prototype(Webandco.NodeTypes:Component.Module.ContentCollection) < prototype(Pac
     renderer = Webandco.NodeTypes:Component.Module.ContentCollection.Renderer
 }
 
-prototype(Webandco.NodeTypes:Component.Module.ContentCollection.Renderer) < prototype(Neos.Neos:ContentCollectionRenderer)
+prototype(Webandco.NodeTypes:Component.Module.ContentCollection.Renderer) < prototype(PackageFactory.AtomicFusion:Component) {
+    renderer = Neos.Neos:ContentCollectionRenderer
+}

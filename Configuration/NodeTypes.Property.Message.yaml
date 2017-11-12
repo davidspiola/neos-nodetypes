@@ -1,0 +1,34 @@
+'Webandco.NodeTypes:Property.Message':
+  properties:
+    message:
+      type: string
+      defaultValue: 'Enter text here'
+      search:
+        fulltextExtractor: ${Indexing.extractInto('h3', value)}
+      ui:
+        inlineEditable: TRUE
+        aloha:
+          placeholder: i18n
+          autoparagraph: FALSE
+          'format':
+            'b': FALSE
+            'i': FALSE
+            'strong': FALSE
+            'em': FALSE
+            'u': FALSE
+            'sub': FALSE
+            'sup': FALSE
+            'del': FALSE
+            'p': FALSE
+            'h1': FALSE
+            'h2': FALSE
+            'h3': FALSE
+            'pre': FALSE
+            'removeFormat': TRUE
+          'table':
+            'table': FALSE
+          'list':
+            'ol': FALSE
+            'ul': FALSE
+          'link':
+            'a': FALSE

@@ -31,6 +31,3 @@
         reloadIfChanged: true
         inspector:
           group: 'article'
-      validation:
-        'Neos.Neos/Validation/NotEmptyValidator': []
-        'Neos.Neos/Validation/DateTimeValidator': []

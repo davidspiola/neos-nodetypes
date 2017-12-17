@@ -18,7 +18,7 @@ prototype(Webandco.NodeTypes:Property.Message.Renderer) < prototype(PackageFacto
 
     renderer = Neos.Fusion:Tag {
         tagName = ${props.tagName}
-        attributes.class = PackageFactory.AtomicFusion:ClassNames
+        attributes.class = Webandco.NodeTypes:Property.Message.Class
         attributes.class.@process.class = ${String.trim(value + ' ' + props.class)}
         attributes.class.@process.modifier = ${props.modifier != '' ? String.trim(value + ' ' + props.class + '--' + props.modifier) : value}
         content = ${props.message}
@@ -26,3 +26,5 @@ prototype(Webandco.NodeTypes:Property.Message.Renderer) < prototype(PackageFacto
         @process.makeEditable.property = ${'message' + props.postfix}
     }
 }
+
+prototype(Webandco.NodeTypes:Property.Message.Class) < prototype(PackageFactory.AtomicFusion:ClassNames)

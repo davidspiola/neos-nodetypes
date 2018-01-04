@@ -1,4 +1,5 @@
 'Webandco.NodeTypes:Component.Block.Headline':
+  label: "${q(node).property('headline')}"
   abstract: false
   superTypes:
     'Neos.Neos:Content': true

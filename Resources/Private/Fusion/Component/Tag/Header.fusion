@@ -20,9 +20,11 @@ prototype(Webandco.NodeTypes:Component.Tag.Header.Renderer) < prototype(PackageF
 
         content = Neos.Fusion:Array {
             headline = Webandco.NodeTypes:Property.Headline.Renderer {
+                class = 'header__headline'
                 headline = ${props.headline}
             }
             subline = Webandco.NodeTypes:Property.Subline {
+                class = 'header__subline'
                 subline = ${props.subline}
                 @if.isNotInUse = ${props.subline != false}
             }

@@ -1,34 +1,6 @@
-prototype(Webandco.NodeTypes:Component.Tag.Header) < prototype(PackageFactory.AtomicFusion:Content) {
-    renderer = Webandco.NodeTypes:Component.Tag.Header.Renderer {
+prototype(Webandco.NodeTypes:Component.Tag.Header) < prototype(Neos.Fusion:Content) {
+    renderer = Webandco.Fusion:Component.Tag.Header {
         headline = ${props.headline}
         subline = ${props.subline}
     }
 }
-
-prototype(Webandco.NodeTypes:Component.Tag.Header.Renderer) < prototype(PackageFactory.AtomicFusion:Component) {
-
-    @styleguide {
-        props {
-            headline = 'Headline'
-            subline = 'Subline'
-        }
-    }
-
-    renderer = Neos.Fusion:Tag {
-        tagName = 'header'
-        attributes.class = PackageFactory.AtomicFusion:ClassNames
-
-        content = Neos.Fusion:Array {
-            headline = Webandco.NodeTypes:Property.Headline.Renderer {
-                class = 'header__headline'
-                headline = ${props.headline}
-            }
-            subline = Webandco.NodeTypes:Property.Subline {
-                class = 'header__subline'
-                subline = ${props.subline}
-                @if.isNotInUse = ${props.subline != false}
-            }
-        }
-    }
-}
-

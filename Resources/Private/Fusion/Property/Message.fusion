@@ -1,30 +1,10 @@
-prototype(Webandco.NodeTypes:Property.Message.Renderer) < prototype(PackageFactory.AtomicFusion:Component) {
+prototype(Webandco.NodeTypes:Property.Message) < prototype(Neos.Fusion:Content) {
 
-    message = 'must-be-set'
+    text = ${q(node).property('message')}
     class = 'message'
-    tagName = 'p'
-    postfix = ''
-    modifier = ''
 
-    @styleguide {
-        props {
-            message = 'Some message...'
-            class = 'text'
-            tagName = 'p'
-            modifier = ''
-            postfix = ''
-        }
-    }
-
-    renderer = Neos.Fusion:Tag {
-        tagName = ${props.tagName}
-        attributes.class = Webandco.NodeTypes:Property.Message.Class
-        attributes.class.@process.class = ${String.trim(value + ' ' + props.class)}
-        attributes.class.@process.modifier = ${props.modifier != '' ? String.trim(value + ' ' + props.class + '--' + props.modifier) : value}
-        content = ${props.message}
-        @process.makeEditable = Neos.Neos:ContentElementEditable
-        @process.makeEditable.property = ${'message' + props.postfix}
+    renderer = Webandco.NodeTypes:Renderer.Message {
+        text = ${props.text}
+        class = ${props.class}
     }
 }
-
-prototype(Webandco.NodeTypes:Property.Message.Class) < prototype(PackageFactory.AtomicFusion:ClassNames)

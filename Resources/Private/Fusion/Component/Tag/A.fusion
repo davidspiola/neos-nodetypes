@@ -1,0 +1,17 @@
+prototype(Webandco.NodeTypes:Component.Tag.A) < prototype(Neos.Fusion:Component) {
+
+    linkHref.@if.node = ${node != null}
+    linkHref.@if.inBackend = ${!node.context.inBackend}
+    linkHref.@process.convertUris = Neos.Neos:ConvertUris {
+        forceConversion = true
+    }
+
+    renderer = Webandco.Fusion:Component.Tag.A {
+        linkHref = ${props.linkHref}
+        linkText = ${props.linkText}
+
+        @process.makeEditable = Neos.Neos:ContentElementEditable
+        @process.makeEditable.property = 'linkText'
+    }
+}
+

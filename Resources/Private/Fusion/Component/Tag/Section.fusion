@@ -1,37 +1,3 @@
-prototype(Webandco.NodeTypes:Component.Tag.Section) < prototype(PackageFactory.AtomicFusion:Content) {
-    renderer = Webandco.NodeTypes:Component.Tag.Section.Renderer
+prototype(Webandco.NodeTypes:Component.Tag.Section) < prototype(Neos.Fusion:Content) {
+    renderer = Webandco.Fusion:Component.Tag.Section
 }
-
-prototype(Webandco.NodeTypes:Component.Tag.Section.Renderer) < prototype(PackageFactory.AtomicFusion:Component) {
-
-    content = Neos.Neos:ContentCollectionRenderer
-
-    renderer = Neos.Fusion:Tag {
-        tagName = 'section'
-        attributes.class = Webandco.NodeTypes:Component.Tag.Section.Container.Class
-        content = Neos.Neos:ContentCollectionRenderer
-    }
-}
-
-prototype(Webandco.NodeTypes:Component.Tag.Section.Container.Renderer) < prototype(PackageFactory.AtomicFusion:Component) {
-    contentTag = 'div'
-    contentClass = 'row'
-    content = Neos.Neos:ContentCollectionRenderer
-    renderer = Neos.Fusion:Tag {
-        tagName = 'section'
-        attributes.class = Webandco.NodeTypes:Component.Tag.Section.Container.Class
-        content = Neos.Fusion:Tag {
-            attributes.class = 'container'
-            content = Neos.Fusion:Tag {
-                tagName = ${props.contentTag}
-                attributes.class = ${props.contentClass}
-                content = ${props.content}
-            }
-        }
-    }
-}
-
-prototype(Webandco.NodeTypes:Component.Tag.Section.Container.Class) < prototype(PackageFactory.AtomicFusion:ClassNames) {
-    section-content = true
-}
-

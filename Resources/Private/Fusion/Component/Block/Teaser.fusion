@@ -1,0 +1,3 @@
+prototype(Webandco.NodeTypes:Component.Block.Teaser) < prototype(Neos.Fusion:Content) {
+    renderer = Webandco.Fusion:Component.Block.Teaser
+}

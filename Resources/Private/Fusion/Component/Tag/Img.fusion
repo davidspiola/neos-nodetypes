@@ -1,5 +1,5 @@
-prototype(Webandco.NodeTypes:Component.Tag.Img) < prototype(PackageFactory.AtomicFusion:Content) {
-    renderer = Webandco.NodeTypes:Component.Tag.Img.Renderer {
+prototype(Webandco.NodeTypes:Component.Tag.Img) < prototype(Neos.Fusion:Content) {
+    renderer = Webandco.Fusion:Component.Tag.Img {
         imageSrc = ${q(node).property('imageSrc')}
         imageAlt = ${q(node).property('imageAlt')}
         imageTitle = ${q(node).property('imageTitle')}
@@ -7,52 +7,3 @@ prototype(Webandco.NodeTypes:Component.Tag.Img) < prototype(PackageFactory.Atomi
         height = null
     }
 }
-
-prototype(Webandco.NodeTypes:Component.Tag.Img.Renderer) < prototype(PackageFactory.AtomicFusion:Component) {
-
-    @styleguide {
-        props {
-            imageSrc = 'resource://Neos.Neos/Public/Imgs/dummy-image.png'
-            imageAlt = 'a image'
-            imageTitle = 'the image'
-            width = null
-            height = null
-        }
-    }
-
-    renderer = Neos.Fusion:Tag {
-        tagName = 'img'
-        attributes.class = PackageFactory.AtomicFusion:ClassNames {
-
-        }
-
-        attributes.src = Neos.Fusion:Case {
-            asset {
-                condition = ${Type.isObject(props.imageSrc)}
-                renderer = Neos.Neos:ImageUri {
-                    allowCropping = true
-                    allowUpScaling = true
-                    asset = ${props.imageSrc}
-                    width = ${props.width}
-                    height = ${props.height}
-                }
-            }
-
-            resource {
-                condition = ${String.indexOf(props.imageSrc, 'resource') >= 0}
-                renderer = Neos.Fusion:ResourceUri {
-                    path = ${props.imageSrc}
-                }
-            }
-
-            fallback {
-                condition = ${true}
-                renderer = '/_Resources/Static/Packages/Neos.Neos/Images/dummy-image.svg'
-            }
-        }
-
-        attributes.alt = ${props.imageAlt}
-        attributes.title = ${props.imageTitle}
-    }
-}
-

@@ -1,15 +1,10 @@
-prototype(Webandco.NodeTypes:Property.Label) < prototype(PackageFactory.AtomicFusion:Component) {
+prototype(Webandco.NodeTypes:Property.Label) < prototype(Neos.Fusion:Content) {
 
-    name = 'label'
-    value = ''
-    postfix = ''
-    tagName = 'p'
+    label = ${q(node).property('label')}
+    tagName = 'span'
 
-    renderer = Neos.Fusion:Tag {
+    renderer = Webandco.NodeTypes:Renderer.Label {
         tagName = ${props.tagName}
-        attributes.class = PackageFactory.AtomicFusion:ClassNames
-        content = ${props.value}
-        @process.makeEditable = Neos.Neos:ContentElementEditable
-        @process.makeEditable.property = ${props.name + props.postfix}
+        content = ${props.label}
     }
 }

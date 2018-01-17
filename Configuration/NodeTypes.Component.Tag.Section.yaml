@@ -1,0 +1,11 @@
+'Webandco.NodeTypes:Component.Tag.Section':
+  abstract: true
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: 'Section'
+    icon: 'icon-gear'
+    position: 100
+    group: 'component'
+
+

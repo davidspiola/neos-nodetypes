@@ -1,9 +1,0 @@
-prototype(Webandco.NodeTypes:Component.Tag.Img) < prototype(Neos.Fusion:Content) {
-    renderer = Webandco.Fusion:Component.Tag.Img {
-        imageSrc = ${q(node).property('imageSrc')}
-        imageAlt = ${q(node).property('imageAlt')}
-        imageTitle = ${q(node).property('imageTitle')}
-        width = null
-        height = null
-    }
-}

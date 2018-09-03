@@ -1,3 +1,0 @@
-prototype(Webandco.NodeTypes:Component.Tag.Section) < prototype(Neos.Fusion:Content) {
-    renderer = Webandco.Fusion:Component.Tag.Section
-}

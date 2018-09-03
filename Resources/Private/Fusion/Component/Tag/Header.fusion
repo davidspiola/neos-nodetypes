@@ -1,6 +1,0 @@
-prototype(Webandco.NodeTypes:Component.Tag.Header) < prototype(Neos.Fusion:Content) {
-    renderer = Webandco.Fusion:Component.Tag.Header {
-        headline = ${props.headline}
-        subline = ${props.subline}
-    }
-}

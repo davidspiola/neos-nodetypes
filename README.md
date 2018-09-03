@@ -1,4 +1,4 @@
-# Alterative fusion base page rendering
+# BEM based node type defintions
 
 A package of very low level node type definitions you generally need on a day bases following the BEM pattern.
 

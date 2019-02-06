@@ -1,8 +1,8 @@
-'Webandco.NodeTypes:Property.Subline':
+'Webandco.NodeTypes:Property.Lead':
   properties:
-    subline:
+    lead:
       search:
-        fulltextExtractor: ${Indexing.extractInto('h3', value)}
+        fulltextExtractor: ${Indexing.extractInto('text', value)}
       ui:
         inline:
           editorOptions:

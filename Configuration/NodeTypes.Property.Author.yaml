@@ -1,6 +1,6 @@
-'Webandco.NodeTypes:Property.Subline':
+'Webandco.NodeTypes:Property.Message':
   properties:
-    subline:
+    message:
       search:
         fulltextExtractor: ${Indexing.extractInto('h3', value)}
       ui:

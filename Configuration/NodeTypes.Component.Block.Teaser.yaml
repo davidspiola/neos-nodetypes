@@ -1,14 +1,7 @@
 'Webandco.NodeTypes:Component.Block.Teaser':
-  label: "${q(node).property('headline')}"
-  abstract: false
+  abstract: true
   superTypes:
-    'Neos.Neos:Content': true
     'Webandco.NodeTypes:Property.Headline': true
     'Webandco.NodeTypes:Property.Subline': true
     'Webandco.NodeTypes:Property.Image': true
     'Webandco.NodeTypes:Property.Link': true
-  ui:
-    label: 'Teaser'
-    icon: 'icon-gear'
-    position: 100
-    group: 'content'

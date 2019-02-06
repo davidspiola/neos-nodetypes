@@ -1,0 +1,5 @@
+'Webandco.NodeTypes:Constraint.Content':
+  constraints:
+    nodeTypes:
+      'Neos.Neos:Document': false
+      '*': true

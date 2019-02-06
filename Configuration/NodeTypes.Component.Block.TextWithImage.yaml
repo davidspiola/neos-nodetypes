@@ -1,0 +1,5 @@
+'Webandco.NodeTypes:Component.Block.TextWithImage':
+  abstract: true
+  superTypes:
+    'Webandco.NodeTypes:Property.Image': true
+    'Webandco.NodeTypes:Property.Text': true

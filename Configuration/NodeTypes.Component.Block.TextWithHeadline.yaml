@@ -1,0 +1,5 @@
+'Webandco.NodeTypes:Component.Block.TextWithHeadline':
+  abstract: true
+  superTypes:
+    'Webandco.NodeTypes:Property.Headline': true
+    'Webandco.NodeTypes:Property.Text': true

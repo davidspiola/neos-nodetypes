@@ -1,14 +1,6 @@
 'Webandco.NodeTypes:Component.Tag.Picture':
   superTypes:
     'Webandco.NodeTypes:Component.Tag.Img': true
-  ui:
-    inspector:
-      groups:
-        image:
-          label: 'Image'
-          position: 5
-          icon: 'icon-image'
-          collapsed: true
   properties:
     imageSrcOne:
       type: Neos\Media\Domain\Model\ImageInterface
@@ -18,19 +10,7 @@
         inspector:
           group: 'image'
           position: 50
-          editorOptions:
-            features:
-              crop: TRUE
-            crop:
-              aspectRatio:
-                options:
-                  square: ~
-                  fourFive: ~
-                  fiveSeven: ~
-                  twoThree: ~
-                  fourThree: ~
-                  sixteenNine: ~
-                enableOriginal: false
-                allowCustom: false
+      options:
+        silhouette: 'webco.image.custom'
 
 

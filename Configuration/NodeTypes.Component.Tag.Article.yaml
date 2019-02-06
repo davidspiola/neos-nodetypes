@@ -2,6 +2,7 @@
   abstract: true
   superTypes:
     'Webandco.NodeTypes:Property.Image': true
+    'Webandco.NodeTypes:Property.Headline': true
   properties:
     author:
       type: string
@@ -9,21 +10,6 @@
         label: Author
         inspector:
           group: 'article'
-    headline:
-      type: string
-      defaultValue: 'Enter headline text here'
-      ui:
-        inlineEditable: TRUE
-        aloha:
-          'autoparagraph': false
-          'format': []
-          'table': []
-          'link': []
-          'list': []
-          'alignment': []
-          'formatlesspaste':
-            'button': false
-            'formatlessPasteOption': true
     datePublished:
       type: DateTime
       ui:

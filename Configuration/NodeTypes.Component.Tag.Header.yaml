@@ -1,11 +1,5 @@
 'Webandco.NodeTypes:Component.Tag.Header':
   abstract: true
   superTypes:
-    'Neos.Neos:Content': true
-    'Webandco.NodeTypes:Property.Headline': true
-    'Webandco.NodeTypes:Property.Subline': true
-  ui:
-    label: 'Header'
-    icon: 'icon-gear'
-    position: 100
-    group: 'component'
+    'Webandco.NodeTypes:Property.Message': true
+    'Webandco.NodeTypes:Property.Author': true

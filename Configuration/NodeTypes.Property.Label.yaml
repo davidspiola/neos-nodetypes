@@ -1,19 +1,11 @@
 'Webandco.NodeTypes:Property.Label':
   properties:
     label:
-      type: string
-      defaultValue: 'Enter label here'
       search:
         fulltextExtractor: ${Indexing.extractInto('text', value)}
       ui:
-        inlineEditable: TRUE
-        aloha:
-          'autoparagraph': false
-          'format': []
-          'table': []
-          'link': []
-          'list': []
-          'alignment': []
-          'formatlesspaste':
-            'button': false
-            'formatlessPasteOption': true
+        inline:
+          editorOptions:
+            placeholder: i18n
+      options:
+        silhouette: 'webco.text.none'

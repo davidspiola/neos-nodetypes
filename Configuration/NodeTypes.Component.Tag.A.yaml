@@ -1,12 +1,6 @@
 'Webandco.NodeTypes:Component.Tag.A':
   abstract: true
   superTypes:
-    'Neos.Neos:Content': true
     'Webandco.NodeTypes:Property.Link': true
-  ui:
-    label: 'Link'
-    icon: 'icon-gear'
-    position: 100
-    group: 'component'
 
 

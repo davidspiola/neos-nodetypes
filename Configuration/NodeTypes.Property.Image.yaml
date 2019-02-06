@@ -15,20 +15,8 @@
         inspector:
           group: 'image'
           position: 50
-          editorOptions:
-            features:
-              crop: TRUE
-            crop:
-              aspectRatio:
-                options:
-                  square: ~
-                  fourFive: ~
-                  fiveSeven: ~
-                  twoThree: ~
-                  fourThree: ~
-                  sixteenNine: ~
-                enableOriginal: false
-                allowCustom: true
+      options:
+        silhouette: 'webco.image.custom'
     imageAlt:
       type: string
       ui:

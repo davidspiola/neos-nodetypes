@@ -1,0 +1,4 @@
+'Webandco.NodeTypes:Component.Module.Section':
+  abstract: true
+  superTypes:
+    'Webandco.NodeTypes:Component.Tag.Section': true

@@ -1,0 +1,11 @@
+'Webandco.NodeTypes:Content.Image':
+  abstract: TRUE
+  superTypes:
+    'Webandco.NodeTypes:Content': true
+    'Webandco.NodeTypes:Component.Tag.Img': true
+  ui:
+    label: 'Image'
+    icon: 'icon-gear'
+    position: 100
+    group: 'content'
+

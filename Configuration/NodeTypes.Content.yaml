@@ -1,0 +1,4 @@
+'Webandco.NodeTypes:Content':
+  abstract: true
+  superTypes:
+    'Neos.Neos:Content': true

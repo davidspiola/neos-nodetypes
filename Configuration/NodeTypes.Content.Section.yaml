@@ -1,0 +1,10 @@
+'Webandco.NodeTypes:Content.Section':
+  abstract: true
+  superTypes:
+    'Webandco.NodeTypes:Component.Module.Section': true
+  ui:
+    label: 'Section'
+    icon: 'icon-gear'
+    position: 100
+    group: 'content'
+    inlineEditable: TRUE

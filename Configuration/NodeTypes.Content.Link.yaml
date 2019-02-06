@@ -1,0 +1,12 @@
+'Webandco.NodeTypes:Content.Link':
+  abstract: true
+  superTypes:
+    'Webandco.NodeTypes:Content': true
+    'Webandco.NodeTypes:Component.Tag.A': true
+  ui:
+    label: 'Link'
+    icon: 'icon-gear'
+    position: 100
+    group: 'content'
+
+

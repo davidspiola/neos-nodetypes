@@ -1,0 +1,10 @@
+'Webandco.NodeTypes:Content.TextWithImage':
+  abstract: true
+  superTypes:
+    'Webandco.NodeTypes:Content': true
+    'Webandco.NodeTypes:Component.Block.TextWithImage': true
+  ui:
+    label: 'Text with Image'
+    icon: 'icon-gear'
+    position: 100
+    group: 'content'

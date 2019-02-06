@@ -1,0 +1,11 @@
+'Webandco.NodeTypes:Content.Headline':
+  label: "${q(node).property('headline')}"
+  abstract: true
+  superTypes:
+    'Webandco.NodeTypes:Content': true
+    'Webandco.NodeTypes:Property.Headline': true
+  ui:
+    label: 'Headline'
+    icon: 'icon-gear'
+    position: 100
+    group: 'content'

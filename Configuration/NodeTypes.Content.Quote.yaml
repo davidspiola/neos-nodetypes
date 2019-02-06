@@ -1,0 +1,11 @@
+'Webandco.NodeTypes:Content.Quote':
+  abstract: true
+  superTypes:
+    'Webandco.NodeTypes:Content': true
+    'Webandco.NodeTypes:Property.Message': true
+    'Webandco.NodeTypes:Property.Author': true
+  ui:
+    label: 'Quote'
+    icon: 'icon-gear'
+    position: 100
+    group: 'content'

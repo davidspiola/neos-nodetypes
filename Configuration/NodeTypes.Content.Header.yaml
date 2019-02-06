@@ -1,0 +1,10 @@
+'Webandco.NodeTypes:Content.Header':
+  abstract: true
+  superTypes:
+    'Webandco.NodeTypes:Content': true
+    'Webandco.NodeTypes:Component.Tag.Header': true
+  ui:
+    label: 'Header'
+    icon: 'icon-gear'
+    position: 100
+    group: 'content'

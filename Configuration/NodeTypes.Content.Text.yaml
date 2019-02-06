@@ -1,0 +1,20 @@
+'Webandco.NodeTypes:Content.Text':
+  abstract: true
+  superTypes:
+    'Webandco.NodeTypes:Content': true
+    'Webandco.NodeTypes:Property.Text': true
+  ui:
+    label: 'Text'
+    icon: 'icon-gear'
+    position: 100
+    group: 'content'
+
+  properties:
+    text:
+      search:
+        fulltextExtractor: ${Indexing.extractInto('h3', value)}
+      ui:
+        inline:
+          editorOptions:
+            autoparagraph: true
+

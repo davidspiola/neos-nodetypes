@@ -1,0 +1,11 @@
+'Webandco.NodeTypes:Content.Teaser':
+  label: "${q(node).property('headline')}"
+  abstract: true
+  superTypes:
+    'Webandco.NodeTypes:Content': true
+    'Webandco.NodeTypes:Component.Block.Teaser': true
+  ui:
+    label: 'Teaser'
+    icon: 'icon-gear'
+    position: 100
+    group: 'content'

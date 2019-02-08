@@ -6,6 +6,6 @@
     'Webandco.NodeTypes:Property.Author': true
   ui:
     label: 'Quote'
-    icon: 'icon-gear'
-    position: 100
+    icon: 'icon-quote-right'
+    position: 200
     group: 'content'

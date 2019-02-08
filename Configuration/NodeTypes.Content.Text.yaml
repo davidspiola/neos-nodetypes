@@ -2,11 +2,11 @@
   abstract: true
   superTypes:
     'Webandco.NodeTypes:Content': true
-    'Webandco.NodeTypes:Property.Text': true
+    'Webandco.NodeTypes:Component.Block.TextWithHeadline': true
   ui:
     label: 'Text'
-    icon: 'icon-gear'
-    position: 100
+    icon: 'icon-font'
+    position: 120
     group: 'content'
 
   properties:

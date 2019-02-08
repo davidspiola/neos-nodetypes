@@ -5,7 +5,7 @@
     'Webandco.NodeTypes:Component.Tag.Img': true
   ui:
     label: 'Image'
-    icon: 'icon-gear'
-    position: 100
+    icon: 'icon-image'
+    position: 130
     group: 'content'
 

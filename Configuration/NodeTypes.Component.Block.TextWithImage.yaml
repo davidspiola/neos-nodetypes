@@ -2,4 +2,4 @@
   abstract: true
   superTypes:
     'Webandco.NodeTypes:Property.Image': true
-    'Webandco.NodeTypes:Property.Text': true
+    'Webandco.NodeTypes:Component.Block.TextWithHeadline': true

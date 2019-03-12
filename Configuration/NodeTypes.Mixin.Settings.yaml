@@ -1,0 +1,9 @@
+'Webandco.NodeTypes:Settings':
+  abstract: true
+  ui:
+    inspector:
+      groups:
+        settings:
+          label: Settings
+          position: 4
+          icon: 'icon-gear'

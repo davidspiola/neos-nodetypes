@@ -2,7 +2,7 @@
   abstract: true
   superTypes:
     'Webandco.NodeTypes:Content': true
-    'Webandco.NodeTypes:Component.Block.TextWithHeadline': true
+    'Webandco.NodeTypes:Property.Text': true
   ui:
     label: 'Text'
     icon: 'icon-font'

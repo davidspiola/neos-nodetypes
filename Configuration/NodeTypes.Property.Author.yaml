@@ -1,6 +1,6 @@
-'Webandco.NodeTypes:Property.Message':
+'Webandco.NodeTypes:Property.Author':
   properties:
-    message:
+    author:
       search:
         fulltextExtractor: ${Indexing.extractInto('h3', value)}
       ui:

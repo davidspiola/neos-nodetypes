@@ -1,0 +1,20 @@
+'Webandco.NodeTypes:Property.Date':
+  superTypes:
+    'Webandco.NodeTypes:Settings': true
+  properties:
+    date:
+      type: DateTime
+      label: 'Date'
+      defaultValue: 'today midnight'
+      search:
+        fulltextExtractor: ${Indexing.extractInto('text', value)}
+      ui:
+        inspector:
+          group: 'settings'
+        inline:
+          editorOptions:
+            placeholder: 'i18n'
+            editorOptions:
+              format: 'd.m.Y'
+      options:
+        silhouette: 'webco.text.highlight'

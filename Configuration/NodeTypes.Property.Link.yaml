@@ -9,7 +9,7 @@
   properties:
     linkText:
       type: string
-      defaultValue: 'link text'
+      placeholder: i18n
       ui:
         inlineEditable: TRUE
         aloha:
